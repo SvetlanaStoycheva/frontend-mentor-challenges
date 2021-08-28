@@ -1,5 +1,10 @@
-## Coding bootcamp testimonials slider
+## Frontend Mentor Challenges
 
-- working with background images
-- position relative/absolute to position prev/next buttons
-- JS for looping thrugh different slides
+1. Coding bootcamp testimonials slider
+
+- Working with background images
+- Position relative/absolute to position prev/next buttons
+- JS for looping through different slides
+<p align-items: center>
+    <img src='ReadMe-IMAGES/1.png' width='200'>
+</p>
