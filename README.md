@@ -1,6 +1,6 @@
 ## Frontend Mentor Challenges
 
-1. Coding bootcamp testimonials slider
+1. Coding bootcamp testimonials slider / built with CSS and JS
 
 - Working with background images
 - Position relative/absolute to position prev/next buttons
@@ -14,3 +14,5 @@
     <img src='./images/Screenshot-testimonial-02.png' width='200'>
 </p>
 <br/>
+
+2. Social media dashboard with theme switcher

@@ -1,0 +1,88 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* primary/main color */
+  --clr-primary-lime-green: hsl(163, 72%, 41%);
+  --clr-primary-bright-red: hsl(356, 69%, 56%);
+  --clr-facebook: hsl(208, 92%, 53%);
+  --clr-twitter: hsl(203, 89%, 53%);
+  --clr-instagram: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --clr-youtube: hsl(348, 97%, 39%);
+
+  --clr-white: #fff;
+  --clr-black: #222;
+  --ff-primary: 'Inter', sans-serif;
+  /* --ff-secondary: 'Open Sans', sans-serif; */
+
+  /* dark theme color toggle*/
+  --clr-darktheme-toggle: linear-gradient(
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  /* light theme toggle*/
+  --clr-lighttheme-toggle: hsl(230, 22%, 74%);
+
+  /* dark theme colors */
+  --clr-very-dark-blue-BG: hsl(230, 17%, 14%);
+  --clr-very-dark-blue-BG-top-pattern: hsl(232, 19%, 15%);
+  --clr-dark-desaturated-blue-card-BG: hsl(228, 28%, 20%);
+  --clr-dark-desaturated-blue-text: hsl(228, 34%, 66%);
+  --clr-white-text: hsl(0, 0%, 100%);
+  /* light theme colors */
+  --clr-very-pale-blue-top-BG-pattern: hsl(225, 100%, 98%);
+  --clr-light-greyish-blue-card-BG: hsl(227, 47%, 96%);
+  --clr-dark-greyish-blue-text: hsl(228, 12%, 44%);
+  --clr-very-dark-blue-text: hsl(230, 17%, 14%);
+
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1440px;
+  --min-width: 375px;
+
+  --fs-size-sm: 0.875rem;
+  /* --fs-size-md: 1.125rem;
+  --fs-size-lg: 2rem; */
+
+  --fw-weight-thin: 400;
+  --fw-weight-bold: 700;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-1);
+  font-size: var(--fs-size-sm);
+  margin: 0 auto;
+  height: 100%;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+/* //////////////
+My CSS
+//////////////// */
