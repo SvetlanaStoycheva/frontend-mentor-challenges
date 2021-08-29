@@ -6,5 +6,11 @@
 - Position relative/absolute to position prev/next buttons
 - JS for looping through different slides
 <p align-items: center>
-    <img src='ReadMe-IMAGES/1.png' width='200'>
+    <img src='./images/Screenshot-testimonial-01.png' width='200'>
 </p>
+<br/>
+
+<p align-items: center>
+    <img src='./images/Screenshot-testimonial-02.png' width='200'>
+</p>
+<br/>
