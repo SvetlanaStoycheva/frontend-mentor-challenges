@@ -15,4 +15,8 @@
 </p>
 <br/>
 
-2. Social media dashboard with theme switcher
+2. Social media dashboard with theme switcher / built with CSS and JS
+
+- toggle between light and dark mode
+- create toggle switch button
+- practicing grid
