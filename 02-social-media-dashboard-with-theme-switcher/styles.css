@@ -31,27 +31,6 @@ Variables
   --clr-font-overview: hsl(228, 12%, 44%);
   --clr-toggle: hsl(230, 22%, 74%);
   --ff-primary: 'Inter', sans-serif;
-  /* --ff-secondary: 'Roboto'; */
-
-  /* dark theme color toggle*/
-  /* --clr-darktheme-toggle: linear-gradient(
-    hsl(210, 78%, 56%),
-    hsl(146, 68%, 55%) */
-  /* ); */
-  /* light theme toggle*/
-  /* --clr-lighttheme-toggle: hsl(230, 22%, 74%); */
-
-  /* dark theme colors */
-  /* --clr-very-dark-blue-BG: hsl(230, 17%, 14%);
-  --clr-very-dark-blue-BG-top-pattern: hsl(232, 19%, 15%);
-  --clr-dark-desaturated-blue-card-BG: hsl(228, 28%, 20%);
-  --clr-dark-desaturated-blue-text: hsl(228, 34%, 66%); */
-
-  /* light theme colors */
-  /* --clr-very-pale-blue-top-BG-pattern: hsl(225, 100%, 98%);
-  --clr-light-greyish-blue-card-BG: hsl(227, 47%, 96%);
-  --clr-dark-greyish-blue-text: hsl(228, 12%, 44%);
-  --clr-very-dark-blue-text: hsl(230, 17%, 14%); */
 
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
@@ -99,7 +78,7 @@ My CSS
 .dark-theme {
   --clr-bcg: hsl(230, 17%, 14%);
   --clr-card-bcg: hsl(228, 28%, 20%);
-  --clr-card-bcg-hover: hsl(228, 28%, 20%);
+  --clr-card-bcg-hover: hsl(228, 19%, 26%);
   --clr-font: hsl(0, 0%, 100%);
   --clr-font-overview: hsl(228, 34%, 66%);
   --clr-toggle: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
@@ -116,7 +95,8 @@ main {
   display: grid;
   place-items: center;
 }
-.dashboard {
+.dashboard,
+.overview {
   width: 80vw;
 }
 
@@ -179,6 +159,9 @@ Toggle switch button
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+.slider:hover {
+  background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
 
 .slider:before {
   position: absolute;
@@ -223,6 +206,7 @@ Dashboard cards
   background: var(--clr-card-bcg);
   margin-bottom: 1.5rem;
   height: 15rem;
+  width: auto;
   display: grid;
   place-items: center;
   padding: 1.2rem 0;
@@ -242,6 +226,7 @@ Dashboard cards
   font-weight: var(--fw-weight-bold);
 }
 .dashboard-card h2 {
+  color: var(--clr-font);
   font-size: 3.5rem;
 }
 .dashboard-card h4 {
@@ -281,17 +266,17 @@ Dashboard cards
     hsl(37, 97%, 70%),
     hsl(329, 70%, 58%)
   );
-  border-image-slice: 70 70;
+  border-image-slice: 70 10;
 }
 .dashboard-card-04 {
   border-top: 0.4rem solid var(--clr-youtube);
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 920px) {
   .dashboard-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
   }
   .break-line {
     display: none;
@@ -304,4 +289,74 @@ Dashboard cards
   .toggle-btn p {
     margin-right: 1rem;
   }
+}
+
+/*///////////// 
+Overview cards 
+//////////////*/
+.overview-cards {
+  max-width: 80vw;
+}
+.overview-title {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--clr-font-overview);
+  letter-spacing: 0.1rem;
+  align-items: left;
+}
+.overview-card {
+  background: var(--clr-card-bcg);
+  height: 10rem;
+  margin-bottom: 1.2rem;
+  transition: var(--transition);
+  border-radius: var(--radius);
+  display: grid;
+  align-items: center;
+}
+.overview-card:hover {
+  background: var(--clr-card-bcg-hover);
+}
+.overview-top,
+.overview-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.overview-top p {
+  text-transform: capitalize;
+  font-weight: var(--fw-weight-bold);
+  color: var(--clr-font-overview);
+}
+.overview-bottom p {
+  color: var(--clr-font);
+  font-size: 2rem;
+  font-weight: var(--fw-weight-bold);
+}
+.arrow p {
+  font-size: 1rem;
+}
+.arrow-up p {
+  color: var(--clr-primary-lime-green);
+}
+.overview-bottom .arrow-down p {
+  color: var(--clr-primary-bright-red);
+}
+
+@media screen and (min-width: 920px) {
+  .overview-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+/* ///////////////// */
+.attribution {
+  color: var(--clr-font-overview);
+}
+.attribution a {
+  color: var(--clr-font-overview);
 }

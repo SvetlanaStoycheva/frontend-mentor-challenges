@@ -22,19 +22,19 @@
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="light-theme">
     <main>
       <header>
         <div class="title">
           <h2>Social Media Dashboard</h2>
-          <p>total followers: 23,004</p> 
+          <p>total followers: 23,004</p>
         </div>
         <div class="break-line"></div>
         <div class="toggle-btn">
-          <p>dark mode </p>
+          <p class="toggle-text">dark mode</p>
           <span>
             <label class="switch">
-              <input type="checkbox">
+              <input type="checkbox" />
               <span class="slider round"></span>
             </label>
           </span>
@@ -43,7 +43,7 @@
       <section class="dashboard">
         <div class="dashboard-cards">
           <!-- single dashboard card -->
-          <article class="dashboard-card dashboard-card-01 ">
+          <article class="dashboard-card dashboard-card-01">
             <p>
               <span><img src="./images/icon-facebook.svg" alt="" /></span>
               @nathanf
@@ -96,121 +96,132 @@
           </article>
         </div>
       </section>
+      <!-- OVERVIEW -->
       <section class="overview">
         <h2 class="overview-title">overview-today</h2>
         <div class="overview-cards">
           <!-- single overview card -->
           <article class="overview-card">
             <div class="overview-top">
-              <p>
-                page views
-                <span><img src="./images/icon-facebook.svg" alt="" /></span>
-              </p>
+              <p>page views</p>
+              <img src="./images/icon-facebook.svg" alt="" />
             </div>
             <div class="overview-bottom">
               <p>87</p>
-              <span><img src="./images/icon-up.svg" alt="" />3%</span>
+              <div class="arrow arrow-up">
+                <img src="./images/icon-up.svg" alt="" />
+                <p>3%</p>
+              </div>
             </div>
-            <!-- single overview card -->
-            <article class="overview-card">
-              <div class="overview-top">
-                <p>
-                  likes
-                  <span><img src="./images/icon-facebook.svg" alt="" /></span>
-                </p>
+          </article>
+          <!-- single overview card -->
+          <article class="overview-card">
+            <div class="overview-top">
+              <p>likes</p>
+              <img src="./images/icon-facebook.svg" alt="" />
+            </div>
+            <div class="overview-bottom">
+              <p>52</p>
+              <div class="arrow arrow-down">
+                <img src="./images/icon-down.svg" alt="" />
+                <p>2%</p>
               </div>
-              <div class="overview-bottom">
-                <p>52</p>
-                <span><img src="./images/icon-down.svg" alt="" />%</span>
+            </div>
+          </article>
+          <!-- single overview card -->
+          <article class="overview-card">
+            <div class="overview-top">
+              <p>likes</p>
+              <img src="./images/icon-instagram.svg" alt="" />
+            </div>
+            <div class="overview-bottom">
+              <p>5462</p>
+              <div class="arrow arrow-up">
+                <img src="./images/icon-up.svg" alt="" />
+                <p>2257%</p>
               </div>
-            </article>
-            <!-- single overview card -->
-            <article class="overview-card">
-              <div class="overview-top">
-                <p>
-                  likes
-                  <span><img src="./images/icon-instagram.svg" alt="" /></span>
-                </p>
+            </div>
+          </article>
+          <!-- single overview card -->
+          <article class="overview-card">
+            <div class="overview-top">
+              <p>profile views</p>
+              <img src="./images/icon-instagram.svg" alt="" />
+            </div>
+            <div class="overview-bottom">
+              <p>52k</p>
+              <div class="arrow arrow-up">
+                <img src="./images/icon-up.svg" alt="" />
+                <p>1375%</p>
               </div>
-              <div class="overview-bottom">
-                <p>5462</p>
-                <span><img src="./images/icon-up.svg" alt="" />2257%</span>
+            </div>
+          </article>
+          <!-- single overview card -->
+          <article class="overview-card">
+            <div class="overview-top">
+              <p>retweets</p>
+              <img src="./images/icon-twitter.svg" alt="" />
+            </div>
+            <div class="overview-bottom">
+              <p>117</p>
+              <div class="arrow arrow-up">
+                <img src="./images/icon-up.svg" alt="" />
+                <p>303%</p>
               </div>
-            </article>
-            <!-- single overview card -->
-            <article class="overview-card">
-              <div class="overview-top">
-                <p>
-                  profile views
-                  <span><img src="./images/icon-instagram.svg" alt="" /></span>
-                </p>
+            </div>
+          </article>
+          </article>
+          <!-- single overview card -->
+          <article class="overview-card">
+            <div class="overview-top">
+              <p>likes</p>
+              <img src="./images/icon-twitter.svg" alt="" />
+            </div>
+            <div class="overview-bottom">
+              <p>507</p>
+              <div class="arrow arrow-up">
+                <img src="./images/icon-up.svg" alt="" />
+                <p>553%</p>
               </div>
-              <div class="overview-bottom">
-                <p>52k</p>
-                <span><img src="./images/icon-up.svg" alt="" />1375%</span>
+            </div>
+          </article>
+          <!-- single overview card -->
+          <article class="overview-card">
+            <div class="overview-top">
+              <p>likes</p>
+              <img src="./images/icon-youtube.svg" alt="" />
+            </div>
+            <div class="overview-bottom">
+              <p>107</p>
+              <div class="arrow arrow-down">
+                <img src="./images/icon-down.svg" alt="" />
+                <p>19%</p>
               </div>
-            </article>
-            <!-- single overview card -->
-            <article class="overview-card">
-              <div class="overview-top">
-                <p>
-                  retweets
-                  <span><img src="./images/icon-twitter.svg" alt="" /></span>
-                </p>
+            </div>
+          </article>
+          <!-- single overview card -->
+          <article class="overview-card">
+            <div class="overview-top">
+              <p>total views</p>
+              <img src="./images/icon-youtube.svg" alt="" />
+            </div>
+            <div class="overview-bottom">
+              <p>1407</p>
+              <div class="arrow arrow-down">
+                <img src="./images/icon-down.svg" alt="" />
+                <p>12%</p>
               </div>
-              <div class="overview-bottom">
-                <p>117</p>
-                <span><img src="./images/icon-up.svg" alt="" />303%</span>
-              </div>
-            </article>
-            <!-- single overview card -->
-            <article class="overview-card">
-              <div class="overview-top">
-                <p>
-                  likes
-                  <span><img src="./images/icon-twitter.svg" alt="" /></span>
-                </p>
-              </div>
-              <div class="overview-bottom">
-                <p>507</p>
-                <span><img src="./images/icon-up.svg" alt="" />553%</span>
-              </div>
-            </article>
-            <!-- single overview card -->
-            <article class="overview-card">
-              <div class="overview-top">
-                <p>
-                  likes
-                  <span><img src="./images/icon-youtube.svg" alt="" /></span>
-                </p>
-              </div>
-              <div class="overview-bottom">
-                <p>107</p>
-                <span><img src="./images/icon-down.svg" alt="" />19%</span>
-              </div>
-            </article>
-            <!-- single overview card -->
-            <article class="overview-card">
-              <div class="overview-top">
-                <p>
-                  total views
-                  <span><img src="./images/icon-youtube.svg" alt="" /></span>
-                </p>
-              </div>
-              <div class="overview-bottom">
-                <p>1407</p>
-                <span><img src="./images/icon-down.svg" alt="" />12%</span>
-              </div>
-            </article>
+            </div>
+          </article>
         </div>
       </section>
     </main>
 
     <div class="attribution">
-      Challenge by
+      Challenge by  
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Sweta</a>.
+      >. Coded by  <a href="#">Sweta</a>.
     </div>
     <script src="app.js"></script>
   </body>
