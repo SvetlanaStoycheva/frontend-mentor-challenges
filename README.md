@@ -40,4 +40,6 @@
 3. Sunnyside agency landing page / built with CSS and JS
 
 - JS for mobile navigation toggle
--
+- CSS
+  - underline styling
+  - hover on ::before element

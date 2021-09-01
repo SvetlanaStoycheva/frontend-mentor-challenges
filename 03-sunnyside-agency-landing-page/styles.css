@@ -1,0 +1,268 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* primary/main color */
+  --clr-primary-soft-red: hsl(7, 99%, 70%);
+  --clr-primary-yellow: hsl(51, 100%, 49%);
+  --clr-primary-dark-cyan: hsl(167, 40%, 24%);
+  --clr-primary-dark-blue: hsl(198, 62%, 26%);
+  --clr-primary-moderate-cyan: hsl(168, 34%, 41%);
+  /* neutral colors */
+  --clr-neutral-very-dark-blue: hsl(212, 27%, 19%);
+  --clr-neutral-very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --clr-neutral-dark-grayish-blue: hsl(232, 10%, 55%);
+  --clr-neutral-grayish-blue: hsl(210, 4%, 67%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+
+  --ff-primary: 'Barlow', sans-serif;
+  --ff-secondery: 'Fraunces', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1440px;
+  --min-width: 375px;
+  --fs-size-sm: 1.125rem;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary);
+  /* background: var(--clr-bcg); */
+  font-size: var(--fs-size-sm);
+  transition: var(--transition);
+  margin: 0 auto;
+  height: 100vh;
+}
+.img {
+  display: block;
+  width: 100%;
+}
+.main {
+  display: grid;
+  place-items: center;
+}
+/*
+=============== 
+Styles
+===============
+*/
+header {
+  height: 60vh;
+  background: url(./images/desktop/image-header.jpg) center/cover;
+}
+.title {
+  display: grid;
+  place-items: center;
+  padding-top: 6rem;
+}
+.title h2 {
+  color: var(--clr-neutral-white);
+  text-transform: uppercase;
+  font-family: var(--ff-secondery);
+  font-size: 2.5rem;
+  letter-spacing: 0.35rem;
+}
+.title img {
+  padding-top: 4rem;
+}
+
+/*
+=============== 
+Services
+===============
+*/
+
+/* first type of service */
+.service-info {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 3rem 7rem;
+  margin: 2rem 0;
+}
+.service-info h3 {
+  font-family: var(--ff-secondery);
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: var(--clr-neutral-very-dark-blue);
+  margin: 1rem 0;
+}
+.service-info p {
+  font-size: 1.5rem;
+  color: var(--clr-neutral-dark-grayish-blue);
+  line-height: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.service-info h4 {
+  font-family: var(--ff-secondery);
+  text-transform: uppercase;
+  color: var(--clr-neutral-very-dark-blue);
+  letter-spacing: 0.08rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+.first-service::before {
+  content: '';
+  position: absolute;
+  left: -6%;
+  bottom: -15%;
+  width: 11.5rem;
+  height: 0.8rem;
+  background: var(--clr-primary-yellow);
+  z-index: -1;
+  opacity: 0.4;
+  border-radius: 20%;
+}
+.second-service::before {
+  content: '';
+  position: absolute;
+  left: -6%;
+  bottom: -15%;
+  width: 11.5rem;
+  height: 0.8rem;
+  z-index: -1;
+  opacity: 0.4;
+  border-radius: 20%;
+  background: var(--clr-primary-soft-red);
+}
+.service-info h4:hover::before {
+  opacity: 0.8;
+}
+.service img {
+  height: 35rem;
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 1120px) {
+  .service-01 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'a b';
+  }
+  .service-02 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'b a';
+  }
+  .service-info {
+    grid-area: a;
+  }
+  .service img {
+    grid-area: b;
+  }
+  .service-info,
+  .service img {
+    max-height: 32rem;
+  }
+  .service-info h3 {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: left;
+  }
+  .service-info p {
+    font-size: 1.2rem;
+    color: var(--clr-neutral-dark-grayish-blue);
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .service-info h4 {
+    font-size: 1rem;
+  }
+  .service-info {
+    padding: 3rem 5rem;
+    place-items: start;
+    text-align: left;
+  }
+  .first-service::before,
+  .second-service::before {
+    width: 9rem;
+    left: -4%;
+  }
+}
+
+/* second type of service */
+.service-second img {
+  height: 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+.service-second {
+  margin-top: -0.5rem;
+  position: relative;
+}
+.service-info-second {
+  position: absolute;
+  top: 60%;
+  display: grid;
+  place-items: center;
+  margin: 2rem;
+}
+.service-info-second h3 {
+  font-family: var(--ff-secondery);
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: var(--clr-neutral-very-dark-grayish-blue);
+  margin: 1rem 0;
+}
+.service-info-second p {
+  font-size: 1.5rem;
+  color: var(--clr-neutral-very-dark-grayish-blue);
+  line-height: 2.4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+@media screen and (min-width: 1120px) {
+  .section-second-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .service-second img {
+    max-height: 32rem;
+  }
+  .service-info-second h3 {
+    font-size: 2rem;
+    color: var(--clr-neutral-very-dark-grayish-blue);
+    margin-top: 0;
+  }
+  .service-info-second p {
+    font-size: 1.2rem;
+    color: var(--clr-neutral-very-dark-grayish-blue);
+    line-height: 1.8rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .service-info-second {
+    top: 55%;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
