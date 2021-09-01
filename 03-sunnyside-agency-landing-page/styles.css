@@ -266,3 +266,80 @@ Services
     margin-right: 6rem;
   }
 }
+
+/*
+=============== 
+Services
+===============
+*/
+.section-testimonials {
+  margin: 4rem 0;
+}
+.section-testimonials h2 {
+  text-align: center;
+  font-family: var(--ff-secondery);
+  text-transform: uppercase;
+  color: var(--clr-neutral-grayish-blue);
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+.testimonials {
+  margin: 3rem 0;
+}
+.testimonial {
+  display: grid;
+  place-items: center;
+  margin: 5rem;
+}
+.testimonial img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+.testimonial p {
+  font-size: 1.5rem;
+  color: var(--clr-neutral-dark-grayish-blue);
+  line-height: 2.8rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+.testimonial h3 {
+  font-family: var(--ff-secondery);
+  font-size: 1.6rem;
+  color: var(--clr-neutral-very-dark-blue);
+}
+.testimonial h4 {
+  color: var(--clr-neutral-grayish-blue);
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
+}
+@media screen and (min-width: 1120px) {
+  .section-testimonials {
+    margin: 8rem 0;
+  }
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4rem 5rem;
+  }
+  .testimonial {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .testimonial img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .testimonial p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .testimonial h3 {
+    font-size: 1.3rem;
+  }
+  .testimonial h4 {
+    color: var(--clr-neutral-grayish-blue);
+    font-size: 1rem;
+  }
+}
