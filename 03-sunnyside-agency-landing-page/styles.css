@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Fraunces:wght@700;900&display=swap');
 
 /*
 =============== 
@@ -17,7 +17,7 @@ Variables
   --clr-primary-yellow: hsl(51, 100%, 49%);
   --clr-primary-dark-cyan: hsl(167, 40%, 24%);
   --clr-primary-dark-blue: hsl(198, 62%, 26%);
-  --clr-primary-moderate-cyan: hsl(168, 34%, 41%);
+  --clr-primary-moderate-cyan: hsl(168, 40%, 63%);
   /* neutral colors */
   --clr-neutral-very-dark-blue: hsl(212, 27%, 19%);
   --clr-neutral-very-dark-grayish-blue: hsl(213, 9%, 39%);
@@ -64,6 +64,9 @@ body {
 .main {
   display: grid;
   place-items: center;
+}
+li {
+  list-style-type: none;
 }
 /*
 =============== 
@@ -342,4 +345,78 @@ Services
     color: var(--clr-neutral-grayish-blue);
     font-size: 1rem;
   }
+}
+
+/*
+=============== 
+Gallery
+===============
+*/
+.gallery-01 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.gallery-01 img {
+  height: 18rem;
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 1120px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-01 img {
+    height: 25rem;
+  }
+}
+
+/*
+=============== 
+Gallery
+===============
+*/
+.footer-section {
+  background: var(--clr-primary-moderate-cyan);
+  display: grid;
+  place-items: center;
+}
+.footer-section h2 {
+  color: var(--clr-primary-dark-cyan);
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  margin: 3rem 0;
+  opacity: 80%;
+}
+.footer-section .links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  margin-bottom: 6rem;
+  column-gap: 3rem;
+  color: var(--clr-primary-dark-cyan);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  opacity: 60%;
+  cursor: pointer;
+}
+.footer-section .links li:hover {
+  color: var(--clr-neutral-white);
+}
+.footer-section .social-links {
+  margin-bottom: 5rem;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  column-gap: 2.5rem;
+}
+.footer-section .social-links p {
+  color: var(--clr-primary-dark-cyan);
+  opacity: 80%;
+  font-size: 2rem;
+}
+.footer-section .social-links p:hover {
+  color: var(--clr-neutral-white);
 }
