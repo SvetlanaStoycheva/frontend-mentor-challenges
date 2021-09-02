@@ -18,6 +18,7 @@
 
 2. Social media dashboard with theme switcher / built with CSS and JS
 
+- [See project on Netlify](https://sweta-fm-social-media-dashboard-with-theme-switcher.netlify.app)
 - JS part: toggle between light and dark mode
 - Create toggle switch button
 - Practicing grid
