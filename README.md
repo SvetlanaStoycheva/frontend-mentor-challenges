@@ -40,7 +40,10 @@
 
 3. Sunnyside agency landing page / built with CSS and JS
 
+- [See project on Netlify]()
 - JS for mobile navigation toggle
 - CSS
   - underline styling
   - hover on ::before element
+  - navbar / sidebar toggle
+  - sidebar as speech bubble; on hover => pill button
