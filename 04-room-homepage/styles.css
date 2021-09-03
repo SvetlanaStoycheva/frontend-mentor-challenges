@@ -1,0 +1,213 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* primary/main color */
+  --clr-primary-dark-gray: hsl(0, 0%, 63%);
+  --clr-primary-black: hsl(0, 0%, 0%);
+  --clr-primary-white: hsl(0, 0%, 100%);
+  --clr-primary-very-dark-gray: hsl(0, 0%, 27%);
+
+  --ff-primary: 'Spartan', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1440px;
+  --min-width: 375px;
+  --fs-size-sm: 0.75rem;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-size-sm);
+  transition: var(--transition);
+  margin: 0 auto;
+  height: 100vh;
+}
+.img {
+  display: block;
+  width: 100%;
+}
+.main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+li {
+  list-style-type: none;
+}
+/*
+=============== 
+Styles
+===============
+*/
+
+/*
+=============== 
+HERO SECTION
+===============
+*/
+/* hero section */
+.slider img {
+  width: 100vw;
+  height: 30rem;
+  object-fit: cover;
+}
+.buttons img {
+  background: var(--clr-primary-black);
+  padding: 1.2rem 1.7rem;
+  margin-left: -0.2rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.buttons {
+  position: absolute;
+  right: 0;
+  bottom: 31.9%;
+}
+.buttons img:hover {
+  background: var(--clr-primary-dark-gray);
+}
+.slider-info {
+  position: relative;
+  /* display: grid; */
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+.slider-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.slider-info p {
+  font-size: 1rem;
+  color: var(--clr-primary-dark-gray);
+  line-height: 1.5rem;
+}
+.arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 18rem;
+}
+.arrow h3 {
+  margin-top: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.arrow h3:hover {
+  color: var(--clr-primary-dark-gray);
+}
+.arrow img {
+  align-self: flex-end;
+  width: 3.2rem;
+}
+@media screen and (min-width: 1020px) {
+  .slider img {
+    width: 60vw;
+  }
+  .hero-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: -1rem;
+  }
+  .slider-info p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .slider-info h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+  .slider-info {
+    width: 28rem;
+    padding: 2rem 4rem;
+    margin: 3rem 2rem;
+  }
+  .arrow h3 {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    font-size: 0.7rem;
+  }
+  .arrow {
+    width: 16rem;
+  }
+  .buttons {
+    right: 30.5%;
+    bottom: 31.9%;
+  }
+}
+/* about section */
+.about-section {
+  display: grid;
+  place-items: center;
+}
+.about-section img {
+  width: 100vw;
+  object-fit: cover;
+}
+.about-info {
+  margin: 4rem 2rem;
+}
+.about-info h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  font-size: 1rem;
+}
+.about-info p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--clr-primary-dark-gray);
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 1020px) {
+  .about-section img {
+    width: 27rem;
+    height: 18rem;
+    object-fit: cover;
+  }
+  .about-section {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    place-items: center;
+  }
+  .about-info h2 {
+    font-size: 0.8rem;
+    padding-top: 2.2rem;
+  }
+  .about-info p {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+  .about-info {
+    margin-top: 1rem;
+  }
+}
