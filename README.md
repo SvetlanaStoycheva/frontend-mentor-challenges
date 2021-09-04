@@ -7,12 +7,12 @@
 - Position relative/absolute to position prev/next buttons
 - JS for looping through different slides
 <p align-items: center>
-    <img src='./images/Screenshot-testimonial-01.png' width='200'>
+    <img src='./images/Screenshot-testimonial-01.png' width='400'>
 </p>
 <br/>
 
 <p align-items: center>
-    <img src='./images/Screenshot-testimonial-02.png' width='200'>
+    <img src='./images/Screenshot-testimonial-02.png' width='400'>
 </p>
 <br/>
 
@@ -24,17 +24,17 @@
 - Practicing grid
 
 <p align-items: center>
-    <img src='./images/Screenshot-toggle-01.png' width='200'>
+    <img src='./images/Screenshot-toggle-01.png' width='400'>
 </p>
 <br/>
 
 <p align-items: center>
-    <img src='./images/Screenshot-toggle-02.png' width='200'>
+    <img src='./images/Screenshot-toggle-02.png' width='400'>
 </p>
 <br/>
 
 <p align-items: center>
-    <img src='./images/Screenshot-toggle-03.png' width='200'>
+    <img src='./images/Screenshot-toggle-03.png' width='400'>
 </p>
 <br/>
 
@@ -49,19 +49,19 @@
   - sidebar as speech bubble; on hover => pill button
 
 <p align-items: center>
-    <img src='./images/Screenshot-agency-01.png' width='200'>
+    <img src='./images/Screenshot-agency-01.png' width='400'>
 </p>
 <br/>
 <p align-items: center>
-    <img src='./images/Screenshot-agency-02.png' width='200'>
+    <img src='./images/Screenshot-agency-02.png' width='400'>
 </p>
 <br/>
 <p align-items: center>
-    <img src='./images/Screenshot-agency-03.png' width='200'>
+    <img src='./images/Screenshot-agency-03.png' width='400'>
 </p>
 <br/>
 <p align-items: center>
-    <img src='./images/Screenshot-agency-04.png' width='200'>
+    <img src='./images/Screenshot-agency-04.png' width='400'>
 </p>
 <br/>
 
@@ -72,14 +72,14 @@
 - JS for slider
 
 <p align-items: center>
-    <img src='./images/Screenshot-room-agency-01.png' width='200'>
+    <img src='./images/Screenshot-room-agency-01.png' width='400'>
 </p>
 <br/>
 <p align-items: center>
-    <img src='./images/Screenshot-room-agency-02.png' width='200'>
+    <img src='./images/Screenshot-room-agency-02.png' width='400'>
 </p>
 <br/>
 <p align-items: center>
-    <img src='./images/Screenshot-room-agency-03.png' width='200'>
+    <img src='./images/Screenshot-room-agency-03.png' width='400'>
 </p>
 <br/>
