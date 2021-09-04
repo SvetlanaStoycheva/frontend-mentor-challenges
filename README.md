@@ -67,5 +67,19 @@
 
 4. Room homepage / CSS and JS
 
-- [See project on Netlify]
+- [See project on Netlify](https://sweta-fm-room-agency.netlify.app)
+- Navigation for small/bigger screen
+- JS for slider
 
+<p align-items: center>
+    <img src='./images/Screenshot-room-agency-01.png' width='200'>
+</p>
+<br/>
+<p align-items: center>
+    <img src='./images/Screenshot-room-agency-02.png' width='200'>
+</p>
+<br/>
+<p align-items: center>
+    <img src='./images/Screenshot-room-agency-03.png' width='200'>
+</p>
+<br/>
