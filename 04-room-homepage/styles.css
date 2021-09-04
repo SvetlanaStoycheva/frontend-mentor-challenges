@@ -65,6 +65,56 @@ li {
 Styles
 ===============
 */
+/*
+=============== 
+Navigation
+===============
+*/
+nav {
+  position: relative;
+}
+.nav-container-small {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 18rem;
+  margin: 2rem 3rem;
+  position: absolute;
+}
+.nav-container-big {
+  display: none;
+}
+.fas {
+  color: var(--clr-primary-white);
+  font-size: 2rem;
+}
+.nav-container-small h2 {
+  font-size: 2.2rem;
+  color: var(--clr-primary-white);
+}
+@media screen and (min-width: 1020px) {
+  .nav-container-small {
+    display: none;
+  }
+  .nav-container-big {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 26rem;
+    place-items: center;
+    position: absolute;
+    margin: 3rem;
+    color: var(--clr-primary-white);
+  }
+  .nav-container-big h2 {
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+  .nav-container-big p {
+    font-size: 0.9rem;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+}
 
 /*
 =============== 
@@ -93,7 +143,7 @@ HERO SECTION
   background: var(--clr-primary-dark-gray);
 }
 .slider-info {
-  position: relative;
+  /* position: relative; */
   /* display: grid; */
   justify-content: center;
   padding: 4rem 2rem;
