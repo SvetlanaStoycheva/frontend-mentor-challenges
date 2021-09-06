@@ -1,3 +1,4 @@
+// Slider functionality
 const sliderArray = [
   {
     title: 'Discover innovative ways to decorate',
@@ -22,7 +23,7 @@ const sliderArray = [
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const sliderEl = document.querySelector('.slider');
-const sliderImg = document.querySelector('.slider-img')
+const sliderImg = document.querySelector('.slider-img');
 const sliderTitle = document.querySelector('.slider-title');
 const sliderText = document.querySelector('.slider-text');
 
@@ -47,6 +48,18 @@ nextBtn.addEventListener('click', () => {
 
 function showHero(index) {
   sliderImg.src = sliderArray[index].img;
-  sliderTitle.textContent = sliderArray[index].title
-  sliderText.textContent = sliderArray[index].info
+  sliderTitle.textContent = sliderArray[index].title;
+  sliderText.textContent = sliderArray[index].info;
 }
+
+// Navigation / small screen
+const closeBtn = document.querySelector('.close-btn');
+const toggleBtn = document.querySelector('.toggle-btn');
+const navSmall = document.querySelector('.toggle-menu');
+
+toggleBtn.addEventListener('click', () => {
+  navSmall.classList.add('show-toggle-menu');
+});
+closeBtn.addEventListener('click', () => {
+  navSmall.classList.remove('show-toggle-menu');
+});

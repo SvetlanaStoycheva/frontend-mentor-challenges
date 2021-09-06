@@ -65,7 +65,7 @@
 </p>
 <br/>
 
-4. Room homepage / CSS and JS
+4. Room Agency homepage / Responsive Landing Page with Sliding Images/Text using CSS / JS
 
 - [See project on Netlify](https://sweta-fm-room-agency.netlify.app)
 - Navigation for small/bigger screen
