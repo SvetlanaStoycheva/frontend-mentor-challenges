@@ -83,3 +83,5 @@
     <img src='./images/Screenshot-room-agency-03.png' width='400'>
 </p>
 <br/>
+
+5. Bookmark Landing Page / CSS and JS

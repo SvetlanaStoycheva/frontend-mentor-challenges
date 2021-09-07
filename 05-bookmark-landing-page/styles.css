@@ -1,0 +1,208 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* primary/main color */
+  --clr-primary-soft-blue: hsl(231, 69%, 60%);
+  --clr-primary-soft-red: hsl(0, 94%, 66%);
+  --clr-primary-grayish-blue: hsl(229, 8%, 60%);
+  --clr-primary-very-dark-blue: hsl(229, 31%, 21%);
+
+  --ff-primary: 'Rubik', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1440px;
+  --min-width: 375px;
+  --fs-size-sm: 1.125rem;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-size-sm);
+  transition: var(--transition);
+  margin: 0 auto;
+  height: 100vh;
+}
+.img {
+  display: block;
+  width: 100%;
+}
+.main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/*
+=============== 
+Styles
+===============
+*/
+/*
+=============== 
+Navigation
+===============
+*/
+.big-screen-nav {
+  display: none;
+}
+.small-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 2.5rem;
+}
+.toggle-btn {
+  font-size: 2rem;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+/* SIDEBAR */
+.hide-small-navbar {
+  display: none;
+}
+.sidebar {
+  display: none;
+  height: 100vh;
+  background: var(--clr-primary-very-dark-blue);
+  opacity: 90%;
+}
+.show-sidebar {
+  display: block;
+}
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+.close-btn {
+  font-size: 2rem;
+  background: transparent;
+  border: transparent;
+  color: white;
+  cursor: pointer;
+}
+.links {
+  display: grid;
+  place-items: center;
+  margin: 2rem 3rem;
+  row-gap: 2.5rem;
+}
+.sidebar-link {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: relative;
+  /* for hover */
+  border: solid transparent 1px;
+  border-radius: var(--radius);
+  padding: 0.5rem 6rem;
+}
+.sidebar-link::before,
+.sidebar-link::after {
+  content: '';
+  position: absolute;
+  border-color: var(--clr-primary-grayish-blue);
+  opacity: 20%;
+  border-style: solid;
+  border-width: 0.1px;
+  min-width: 20rem;
+  bottom: 4rem;
+  left: 0rem;
+}
+.sidebar-link:hover {
+  border: solid white 1px;
+}
+.social-links {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-links a {
+  color: white;
+  font-size: 2rem;
+}
+.sidebar-facebook {
+  margin-right: 1.5rem;
+}
+.sidebar-twitter {
+  margin-left: 1.5rem;
+}
+@media screen and (min-width: 920px) {
+  .small-navbar {
+    display: none;
+  }
+  .big-screen-nav {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 5rem;
+  }
+  .big-screen-links {
+    display: flex;
+    width: 30rem;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .navbar-link {
+    text-transform: uppercase;
+    color: var(--clr-primary-grayish-blue);
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .navbar-link:hover {
+    color: var(--clr-primary-soft-red);
+  }
+  .login-link {
+    margin-left: 1rem;
+    background: var(--clr-primary-soft-red);
+    padding: 0.5rem 2rem;
+    border-radius: var(--radius);
+    color: white;
+    border: var(--clr-primary-grayish-blue) 1px solid;
+  }
+  .login-link:hover {
+    border: var(--clr-primary-soft-red) 1px solid;
+    background: white;
+    color: var(--clr-primary-soft-red);
+  }
+}
