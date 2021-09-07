@@ -16,6 +16,7 @@ Variables
   --clr-primary-soft-blue: hsl(231, 69%, 60%);
   --clr-primary-soft-red: hsl(0, 94%, 66%);
   --clr-primary-grayish-blue: hsl(229, 8%, 60%);
+  --clr-primary-dark-grayish-blue: hsl(231, 5%, 29%);
   --clr-primary-very-dark-blue: hsl(229, 31%, 21%);
 
   --ff-primary: 'Rubik', sans-serif;
@@ -23,6 +24,7 @@ Variables
   --spacing: 0.1rem;
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-blue-shadow: 0 5px 15px rgba(83, 104, 223, 0.2);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1440px;
   --min-width: 375px;
@@ -63,6 +65,34 @@ li {
 a {
   text-decoration: none;
 }
+.btn {
+  background: var(--clr-primary-soft-blue);
+  padding: 1.2rem 1.2rem;
+  color: white;
+  border-radius: var(--radius);
+  border: transparent;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+  box-shadow: var(--dark-blue-shadow);
+  cursor: pointer;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.text {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: var(--clr-primary-grayish-blue);
+  line-height: 1.8rem;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
 /*
 =============== 
 Styles
@@ -94,7 +124,12 @@ Navigation
 }
 .sidebar {
   display: none;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
   background: var(--clr-primary-very-dark-blue);
   opacity: 90%;
 }
@@ -206,3 +241,115 @@ Navigation
     color: var(--clr-primary-soft-red);
   }
 }
+
+/*
+=============== 
+Hero
+===============
+*/
+.hero {
+  margin: 3rem 2rem;
+  display: grid;
+  place-items: center;
+}
+.hero-img {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.hero-img img {
+  width: 90vw;
+}
+.hero-img::before {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  border: 0.25rem solid var(--clr-primary-soft-blue);
+  top: 6rem;
+  right: -5rem;
+  border-bottom-left-radius: 10rem;
+  z-index: -1;
+}
+.hero-info {
+  width: 80vw;
+  text-align: center;
+}
+.hero-info h2 {
+  color: var(--clr-primary-very-dark-blue);
+  font-size: 2.2rem;
+  letter-spacing: 0.07rem;
+  line-height: 2.5rem;
+}
+.hero-btn-firefox {
+  background: white;
+  color: var(--clr-primary-dark-grayish-blue);
+}
+.hero-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 920px) {
+  .hero-info {
+    max-width: 35vw;
+    margin-left: 5rem;
+    text-align: left;
+  }
+  .hero-img img {
+    max-width: 45vw;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 'a b';
+    column-gap: 2rem;
+    margin-top: 4rem;
+    place-items: center;
+  }
+  .hero-info {
+    grid-area: a;
+  }
+  .hero-img {
+    grid-area: b;
+  }
+  .hero-buttons {
+    justify-content: left;
+  }
+  .hero-btn-chrome {
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .hero {
+    column-gap: 5rem;
+  }
+  .hero-info {
+    max-width: 35vw;
+    margin-left: 7rem;
+    text-align: left;
+  }
+}
+/*
+=============== 
+Features
+===============
+*/
+/*
+=============== 
+Download
+===============
+*/
+/*
+=============== 
+FAQ
+===============
+*/
+/*
+=============== 
+Contact Form
+===============
+*/
+/*
+=============== 
+Footer
+===============
+*/
