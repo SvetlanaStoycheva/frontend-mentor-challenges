@@ -96,6 +96,9 @@ a {
   .section-center {
     width: 95vw;
   }
+  .btn {
+    padding: 1.2rem 1.5rem;
+  }
 }
 /*
 =============== 
@@ -385,6 +388,7 @@ Features
   font-weight: 500;
   color: var(--clr-primary-grayish-blue);
   transition: var(--transition);
+  cursor: pointer;
 }
 .features-button:hover {
   color: var(--clr-primary-soft-red);
