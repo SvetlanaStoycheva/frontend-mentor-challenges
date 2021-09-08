@@ -92,7 +92,7 @@ a {
   color: var(--clr-primary-very-dark-blue);
   letter-spacing: 0.02rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .section-center {
     width: 95vw;
   }
@@ -494,6 +494,82 @@ Features
 Download
 ===============
 */
+.downloads {
+  display: grid;
+  place-items: center;
+  margin: 0 1.2rem;
+}
+.download {
+  display: grid;
+  place-items: center;
+  box-shadow: var(--dark-blue-shadow);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+.download img {
+  width: 8rem;
+  margin: 1.2rem 0;
+}
+.download h3 {
+  color: var(--clr-primary-very-dark-blue);
+  letter-spacing: 0.04rem;
+  margin: 1rem 0;
+}
+.download p {
+  color: var(--clr-primary-grayish-blue);
+}
+.line {
+  width: 100%;
+  border-style: dotted;
+  border-radius: 5px;
+  height: 0.2rem;
+  color: var(--clr-primary-grayish-blue);
+  margin: 1.5rem auto;
+}
+.download-btn {
+  border: transparent 1px solid;
+}
+.download-btn:hover {
+  background: white;
+  color: var(--clr-primary-soft-blue);
+  border: var(--clr-primary-soft-blue) 1px solid;
+}
+
+@media screen and (min-width: 920px) {
+  .downloads {
+    margin-top: 4rem;
+  }
+  .downloads-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    margin: 2rem 0;
+    max-width: 90vw;
+  }
+  .download {
+    height: 25rem;
+  }
+  .download img {
+    width: 6rem;
+    object-fit: cover;
+  }
+  .download .btn {
+    font-size: 0.8rem;
+    padding: 0.8rem 1.2rem;
+  }
+  .second-download {
+    margin-top: 3rem;
+  }
+  .third-download {
+    margin-top: 6rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .downloads-container {
+    max-width: 70vw;
+  }
+}
 /*
 =============== 
 FAQ
