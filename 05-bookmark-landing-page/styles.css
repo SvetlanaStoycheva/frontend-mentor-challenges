@@ -88,6 +88,10 @@ a {
   color: var(--clr-primary-grayish-blue);
   line-height: 1.8rem;
 }
+.section-title {
+  color: var(--clr-primary-very-dark-blue);
+  letter-spacing: 0.02rem;
+}
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
@@ -151,21 +155,23 @@ Navigation
 }
 .links {
   display: grid;
-  place-items: center;
-  margin: 2rem 3rem;
-  row-gap: 2.5rem;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
 }
 .sidebar-link {
   color: white;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 0.2rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
   position: relative;
   /* for hover */
-  border: solid transparent 1px;
+  border: solid transparent 2px;
   border-radius: var(--radius);
-  padding: 0.5rem 6rem;
+  padding: 0.5rem 8rem;
 }
 .sidebar-link::before,
 .sidebar-link::after {
@@ -175,12 +181,12 @@ Navigation
   opacity: 20%;
   border-style: solid;
   border-width: 0.1px;
-  min-width: 20rem;
-  bottom: 4rem;
-  left: 0rem;
+  min-width: 24rem;
+  bottom: 3.5rem;
+  right: -0.2rem;
 }
 .sidebar-link:hover {
-  border: solid white 1px;
+  border: solid white 2px;
 }
 .social-links {
   margin-top: 10rem;
@@ -283,6 +289,18 @@ Hero
 .hero-btn-firefox {
   background: white;
   color: var(--clr-primary-dark-grayish-blue);
+  border: transparent 1px solid;
+}
+.hero-btn-firefox:hover {
+  border: black 1px solid;
+}
+.hero-btn-chrome {
+  border: transparent 1px solid;
+}
+.hero-btn-chrome:hover {
+  background: white;
+  color: var(--clr-primary-soft-blue);
+  border: var(--clr-primary-soft-blue) 1px solid;
 }
 .hero-buttons {
   display: flex;
@@ -333,6 +351,73 @@ Hero
 Features
 ===============
 */
+.features {
+  margin: 3rem 2rem;
+  margin-top: 6rem;
+  display: grid;
+  place-items: center;
+}
+.title-container {
+  display: grid;
+  place-items: center;
+  margin: 2rem 2rem;
+}
+.title-container .text {
+  text-align: center;
+}
+.features-img img {
+  width: 80vw;
+}
+.features h2 {
+  margin-bottom: -1rem;
+}
+.featires-container {
+  display: grid;
+  place-items: center;
+}
+.features-buttons {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 3rem;
+  margin-bottom: 6rem;
+}
+.features-button {
+  position: relative;
+  background: transparent;
+  border: transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--clr-primary-grayish-blue);
+}
+.features-button-active {
+  color: var(--clr-primary-very-dark-blue);
+  position: relative;
+}
+.features-button-active::after {
+  content: '';
+  position: absolute;
+  border-color: var(--clr-primary-soft-red);
+  border-style: solid;
+  border-width: 0.15rem;
+  min-width: 10rem;
+  left: 0.5rem;
+  top: 2.5rem;
+}
+.features-button::before,
+.features-button-last::after {
+  content: '';
+  position: absolute;
+  border-color: var(--clr-primary-grayish-blue);
+  opacity: 20%;
+  border-style: solid;
+  border-width: 0.1px;
+  min-width: 26rem;
+  left: -8rem;
+  top: -1.7rem;
+}
+.features-button-last::after {
+  top: 3rem;
+}
 /*
 =============== 
 Download
