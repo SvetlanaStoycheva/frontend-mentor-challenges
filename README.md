@@ -85,3 +85,8 @@
 <br/>
 
 5. Bookmark Landing Page / CSS and JS
+
+- Toggling between navbar and sidebar
+- Before/after elements
+- Active class on a button, switching the active content
+- Open/close answers functionality; traversing the DOM

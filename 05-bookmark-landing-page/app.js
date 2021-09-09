@@ -15,7 +15,7 @@ closeBtn.addEventListener('click', () => {
 });
 
 // Features functionality
-const featuresBtns = document.querySelectorAll('.features-button');
+const featuresBtns = [...document.querySelectorAll('.features-button')];
 const container = document.querySelector('.featires-container');
 
 const imageEl = document.querySelector('.features-photo');
@@ -45,6 +45,7 @@ const features = [
 
 featuresBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
+      featuresBtns.map((b)=> {b.classList.remove('features-button-active')})
     btn.classList.add('features-button-active');
     
     if (e.target.classList.contains('first')) {
@@ -62,3 +63,19 @@ featuresBtns.forEach((btn) => {
     }
   });
 });
+
+// FAQ functionality
+const answerBtns = document.querySelectorAll('.answer-btn');
+// const answerEl = document.querySelector('.answer')
+
+answerBtns.forEach((answerBtn)=>{
+    answerBtn.addEventListener('click', (e)=>{
+        const question = e.currentTarget.parentElement;
+        const answer = question.nextElementSibling;
+        answer.classList.toggle('show-answer')
+
+        console.log(e.target);
+        
+        
+    })
+})

@@ -351,6 +351,10 @@ Hero
     margin-left: 7rem;
     text-align: left;
   }
+  .hero-buttons .btn {
+    font-size: 0.8rem;
+    padding: 0.8rem 1.2rem;
+  }
 }
 /*
 =============== 
@@ -375,6 +379,7 @@ Features
   margin-bottom: -1rem;
 }
 .features-buttons {
+  position: relative;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 3rem;
@@ -407,8 +412,16 @@ Features
   left: 0.5rem;
   top: 2.5rem;
 }
-.features-button::before,
-.features-button-last::after {
+.button-hr {
+  position: absolute;
+  border-color: var(--clr-primary-grayish-blue);
+  opacity: 20%;
+  min-width: 26rem;
+  top: 11.5rem;
+  left: -8rem;
+}
+.features-button::before
+/* .features-button-last::after  */ {
   content: '';
   position: absolute;
   border-color: var(--clr-primary-grayish-blue);
@@ -419,9 +432,9 @@ Features
   left: -8rem;
   top: -1.7rem;
 }
-.features-button-last::after {
+/* .features-button-last::after {
   top: 3rem;
-}
+}  */
 .features-img {
   position: relative;
   margin-bottom: 4rem;
@@ -462,9 +475,14 @@ Features
   .features-button::before {
     display: none;
   }
-  .features-button-last::after {
+  /* .features-button-last::after {
     min-width: 44rem;
     left: -31rem;
+  } */
+  .button-hr {
+    width: 44rem;
+    top: 3rem;
+    left: -3rem;
   }
   .features-button-active::after {
     top: 2.7rem;
@@ -487,6 +505,10 @@ Features
   .features-img::before {
     width: 130%;
     left: -16rem;
+  }
+  .features-info .btn {
+    font-size: 0.8rem;
+    padding: 0.8rem 1.2rem;
   }
 }
 /*
@@ -520,12 +542,14 @@ Download
   color: var(--clr-primary-grayish-blue);
 }
 .line {
-  width: 100%;
-  border-style: dotted;
-  border-radius: 5px;
-  height: 0.2rem;
-  color: var(--clr-primary-grayish-blue);
+  width: 100px;
+  height: 1px;
+  /* border-style: dotted; */
+  /* border-radius: 5px;
+  height: 0.001rem;
+  color: var(--clr-primary-grayish-blue); */
   margin: 1.5rem auto;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='2%2c 8' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
 }
 .download-btn {
   border: transparent 1px solid;
@@ -575,6 +599,85 @@ Download
 FAQ
 ===============
 */
+.faq {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.faq-title-container {
+  margin: 2.5rem;
+  text-align: center;
+}
+.single-faq {
+  transition: var(--transition);
+  cursor: pointer;
+}
+.single-faq:hover .question h3 {
+  color: var(--clr-primary-soft-red);
+}
+.faq-container {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-bottom: 2rem;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question h3 {
+  color: var(--clr-primary-dark-grayish-blue);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.faq-container hr {
+  color: var(--clr-primary-grayish-blue);
+  opacity: 40%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.faq .btn {
+  width: 8.5rem;
+  margin: 0 auto;
+}
+.answer-btn {
+  border: transparent;
+  background: transparent;
+}
+.down-icon {
+  color: var(--clr-primary-soft-blue);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.up-icon {
+  color: var(--clr-primary-soft-red);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.answer {
+  display: none;
+}
+.show-answer .down-icon {
+  display: none;
+}
+.show-answer {
+  display: block;
+}
+
+@media screen and (min-width: 920px) {
+  .faq {
+    margin: 0 auto;
+    width: 35rem;
+  }
+  .faq .btn {
+    font-size: 0.8rem;
+    padding: 0.8rem 1.2rem;
+  }
+  .faq-title-container {
+    width: 35rem;
+  }
+}
 /*
 =============== 
 Contact Form
