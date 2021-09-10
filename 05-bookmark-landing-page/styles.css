@@ -603,6 +603,7 @@ FAQ
   display: grid;
   align-content: center;
   justify-content: center;
+  margin-bottom: 7rem;
 }
 .faq-title-container {
   margin: 2.5rem;
@@ -658,17 +659,27 @@ FAQ
 .answer {
   display: none;
 }
-.show-answer .down-icon {
-  display: none;
-}
 .show-answer {
   display: block;
 }
+.show-up-icon {
+  display: block;
+}
+.hide-down-icon {
+  display: none;
+}
+/* .show-answer .up-icon {
+  display: inline;
+}
+.show-answer .down-icon {
+  display: none;
+} */
 
 @media screen and (min-width: 920px) {
   .faq {
     margin: 0 auto;
     width: 35rem;
+    margin-bottom: 7rem;
   }
   .faq .btn {
     font-size: 0.8rem;
@@ -683,6 +694,86 @@ FAQ
 Contact Form
 ===============
 */
+.contact-form {
+  background: var(--clr-primary-soft-blue);
+}
+.contact-container {
+  display: grid;
+  place-items: center;
+  padding: 4rem 2rem;
+}
+.contact-form h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.contact-title {
+  margin: 1rem 0;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.form-container {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.form-input {
+  border: transparent;
+  border-radius: var(--radius);
+  padding: 1.2rem 8rem;
+  padding-left: 2rem;
+}
+.submit-btn {
+  background: var(--clr-primary-soft-red);
+  margin-top: 1rem;
+  padding: 1.2rem 8rem;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+.submit-btn:hover {
+  background: white;
+  border: 2px solid var(--clr-primary-soft-red);
+  color: var(--clr-primary-soft-red);
+}
+.form-input::placeholder {
+  color: var(--clr-primary-grayish-blue);
+  font-size: 1rem;
+  align-self: left;
+}
+@media screen and (min-width: 920px) {
+  .contact-container {
+    max-width: 35vw;
+    margin: 0 auto;
+  }
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 1rem;
+  }
+  .contact-form h3 {
+    font-size: 0.7rem;
+  }
+  .contact-title {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  .form-input {
+    padding: 0.5rem 4rem;
+    padding-left: 1rem;
+  }
+  .submit-btn {
+    margin-top: 0;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  .form-input::placeholder {
+    font-size: 0.8rem;
+  }
+}
 /*
 =============== 
 Footer

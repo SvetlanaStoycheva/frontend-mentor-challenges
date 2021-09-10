@@ -66,16 +66,17 @@ featuresBtns.forEach((btn) => {
 
 // FAQ functionality
 const answerBtns = document.querySelectorAll('.answer-btn');
-// const answerEl = document.querySelector('.answer')
 
 answerBtns.forEach((answerBtn)=>{
     answerBtn.addEventListener('click', (e)=>{
         const question = e.currentTarget.parentElement;
         const answer = question.nextElementSibling;
-        answer.classList.toggle('show-answer')
+        answer.classList.toggle('show-answer')  
+        console.log(e.currentTarget.lastElementChild);
 
-        console.log(e.target);
-        
-        
+        const downIcon = e.currentTarget.firstElementChild;
+        const upIcon = e.currentTarget.lastElementChild;
+        downIcon.classList.toggle('hide-down-icon');
+        upIcon.classList.toggle('show-up-icon');
     })
 })
