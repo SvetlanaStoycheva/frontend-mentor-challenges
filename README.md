@@ -86,6 +86,7 @@
 
 5. Bookmark Landing Page / CSS and JS
 
+- [See project on Netlify](https://sweta-fm-bookmark-landing-page.netlify.app)
 - Toggling between navbar and sidebar
 - Working with before/after elements
 - Active class on a button, switching the active content
