@@ -171,7 +171,6 @@ Navigation
   font-size: 1.2rem;
   font-weight: 400;
   position: relative;
-  /* for hover */
   border: solid transparent 2px;
   border-radius: var(--radius);
   padding: 0.5rem 8rem;
@@ -744,8 +743,23 @@ Contact Form
   font-size: 1rem;
   align-self: left;
 }
+.alarm {
+  background: var(--clr-primary-soft-red);
+  color: white;
+  padding: 0.8rem 2.75rem;
+  border-radius: var(--radius);
+  border: white 3px solid;
+  display: none;
+}
+.show-alarm {
+  display: block;
+}
+.form-input-alarm {
+  border: 2px solid var(--clr-primary-soft-red);
+}
 @media screen and (min-width: 920px) {
   .contact-container {
+    place-items: left;
     max-width: 35vw;
     margin: 0 auto;
   }
@@ -773,9 +787,97 @@ Contact Form
   .form-input::placeholder {
     font-size: 0.8rem;
   }
+  .alarm {
+    padding: 0.2rem 1rem;
+    border: transparent 3px solid;
+    font-size: 0.8rem;
+    margin-left: -7rem;
+  }
 }
 /*
 =============== 
 Footer
 ===============
 */
+footer {
+  background: var(--clr-primary-very-dark-blue);
+  padding: 3rem 0;
+}
+.footer-section {
+  display: grid;
+  place-items: center;
+}
+.footer-section img {
+  width: 12rem;
+}
+.footer-link {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.footer-link:hover {
+  color: var(--clr-primary-soft-red);
+}
+.footer-links {
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.footer-social-links {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social-links a {
+  color: white;
+  font-size: 2rem;
+  transition: var(--transition);
+}
+.footer-social-links a:hover {
+  color: var(--clr-primary-soft-red);
+}
+
+@media screen and (min-width: 920px) {
+  footer {
+    padding: 1.2rem 5rem;
+  }
+  .footer-section {
+    grid-template-columns: auto 1fr auto;
+    margin: 0 4rem;
+  }
+  .footer-links {
+    display: flex;
+    align-self: left;
+    justify-content: space-evenly;
+    margin-left: -13rem;
+    max-width: 18rem;
+    margin-top: 0rem;
+  }
+  .footer-section img {
+    width: 8rem;
+  }
+  .footer-link {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    margin-bottom: 0rem;
+  }
+  .footer-social-links a {
+    font-size: 1.2rem;
+  }
+  .footer-social-links {
+    margin-top: 0rem;
+    display: flex;
+    align-items: left;
+    justify-content: start;
+  }
+}

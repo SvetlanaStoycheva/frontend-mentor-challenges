@@ -45,9 +45,11 @@ const features = [
 
 featuresBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
-      featuresBtns.map((b)=> {b.classList.remove('features-button-active')})
+    featuresBtns.map((b) => {
+      b.classList.remove('features-button-active');
+    });
     btn.classList.add('features-button-active');
-    
+
     if (e.target.classList.contains('first')) {
       text.textContent = features[0].text;
       title.textContent = features[0].title;
@@ -67,16 +69,36 @@ featuresBtns.forEach((btn) => {
 // FAQ functionality
 const answerBtns = document.querySelectorAll('.answer-btn');
 
-answerBtns.forEach((answerBtn)=>{
-    answerBtn.addEventListener('click', (e)=>{
-        const question = e.currentTarget.parentElement;
-        const answer = question.nextElementSibling;
-        answer.classList.toggle('show-answer')  
-        console.log(e.currentTarget.lastElementChild);
+answerBtns.forEach((answerBtn) => {
+  answerBtn.addEventListener('click', (e) => {
+    const question = e.currentTarget.parentElement;
+    const answer = question.nextElementSibling;
+    answer.classList.toggle('show-answer');
+    console.log(e.currentTarget.lastElementChild);
 
-        const downIcon = e.currentTarget.firstElementChild;
-        const upIcon = e.currentTarget.lastElementChild;
-        downIcon.classList.toggle('hide-down-icon');
-        upIcon.classList.toggle('show-up-icon');
-    })
-})
+    const downIcon = e.currentTarget.firstElementChild;
+    const upIcon = e.currentTarget.lastElementChild;
+    downIcon.classList.toggle('hide-down-icon');
+    upIcon.classList.toggle('show-up-icon');
+  });
+});
+
+// Contact form alarm
+const inputField = document.querySelector('.form-input');
+const submitBtn = document.querySelector('.submit-btn');
+const alarmField = document.querySelector('.alarm');
+const inputValueEl = document.getElementById('email');
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  const inputValue = inputValueEl.value;
+  const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (inputValue !== '' || inputValue.match(mailformat)) {
+    return true;
+  } else {
+    alarmField.classList.add('show-alarm');
+    inputField.classList.add('form-input-alarm');
+
+    return false;
+  }
+});

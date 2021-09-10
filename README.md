@@ -7,12 +7,12 @@
 - Position relative/absolute to position prev/next buttons
 - JS for looping through different slides
 <p align-items: center>
-    <img src='./images/Screenshot-testimonial-01.png' width='400'>
+    <img src='./images/Screenshot-testimonial-01.png' width='250'>
 </p>
 <br/>
 
 <p align-items: center>
-    <img src='./images/Screenshot-testimonial-02.png' width='400'>
+    <img src='./images/Screenshot-testimonial-02.png' width='250'>
 </p>
 <br/>
 
@@ -24,17 +24,17 @@
 - Practicing grid
 
 <p align-items: center>
-    <img src='./images/Screenshot-toggle-01.png' width='400'>
+    <img src='./images/Screenshot-toggle-01.png' width='250'>
 </p>
 <br/>
 
 <p align-items: center>
-    <img src='./images/Screenshot-toggle-02.png' width='400'>
+    <img src='./images/Screenshot-toggle-02.png' width='250'>
 </p>
 <br/>
 
 <p align-items: center>
-    <img src='./images/Screenshot-toggle-03.png' width='400'>
+    <img src='./images/Screenshot-toggle-03.png' width='250'>
 </p>
 <br/>
 
@@ -49,19 +49,19 @@
   - sidebar as speech bubble; on hover => pill button
 
 <p align-items: center>
-    <img src='./images/Screenshot-agency-01.png' width='400'>
+    <img src='./images/Screenshot-agency-01.png' width='250'>
 </p>
 <br/>
 <p align-items: center>
-    <img src='./images/Screenshot-agency-02.png' width='400'>
+    <img src='./images/Screenshot-agency-02.png' width='250'>
 </p>
 <br/>
 <p align-items: center>
-    <img src='./images/Screenshot-agency-03.png' width='400'>
+    <img src='./images/Screenshot-agency-03.png' width='250'>
 </p>
 <br/>
 <p align-items: center>
-    <img src='./images/Screenshot-agency-04.png' width='400'>
+    <img src='./images/Screenshot-agency-04.png' width='250'>
 </p>
 <br/>
 
@@ -72,21 +72,47 @@
 - JS for slider
 
 <p align-items: center>
-    <img src='./images/Screenshot-room-agency-01.png' width='400'>
+    <img src='./images/Screenshot-room-agency-01.png' width='250'>
 </p>
 <br/>
 <p align-items: center>
-    <img src='./images/Screenshot-room-agency-02.png' width='400'>
+    <img src='./images/Screenshot-room-agency-02.png' width='250'>
 </p>
 <br/>
 <p align-items: center>
-    <img src='./images/Screenshot-room-agency-03.png' width='400'>
+    <img src='./images/Screenshot-room-agency-03.png' width='250'>
 </p>
 <br/>
 
 5. Bookmark Landing Page / CSS and JS
 
 - Toggling between navbar and sidebar
-- Before/after elements
+- Working with before/after elements
 - Active class on a button, switching the active content
 - Open/close answers functionality; traversing the DOM
+- Email form. Error message when the form is submitted and the input field is empty
+
+<p align-items: center>
+    <img src='./images/Screenshot bookmark-landing-page-01.png' width='250'>
+</p>
+
+<br/>
+<p align-items: center>
+    <img src='./images/Screenshot bookmark-landing-page-02.png' width='250'>
+</p>
+<br/>
+
+<p align-items: center>
+    <img src='./images/Screenshot bookmark-landing-page-04.png' width='250'>
+</p>
+<br/>
+
+<p align-items: center>
+    <img src='./images/Screenshot bookmark-landing-page-05.png' width='250'>
+</p>
+<br/>
+
+<p align-items: center>
+    <img src='./images/Screenshot bookmark-landing-page-06.png' width='250'>
+</p>
+<br/>

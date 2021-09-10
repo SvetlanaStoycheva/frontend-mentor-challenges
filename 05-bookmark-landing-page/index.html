@@ -228,10 +228,12 @@
           <article class="single-faq">
             <div class="question">
               <h3>Is there a mobile app?</h3>
-              <span class="answer-btn down-icon"
-                ><i class="fas fa-chevron-down"></i
-              ></span>
-              <!-- <i class="fas fa-chevron-down"></i> -->
+              <button class="answer-btn">
+                <span class="down-icon"
+                  ><i class="fas fa-chevron-down"></i
+                ></span>
+                <span class="up-icon"><i class="fas fa-chevron-up"></i></span>
+              </button>
             </div>
             <p class="text answer">
               Sed consectetur quam id neque fermentum accumsan. Praesent luctus
@@ -245,10 +247,12 @@
           <article class="text single-faq">
             <div class="question">
               <h3>What about other Chromium browsers?</h3>
-              <span class="answer-btn down-icon"
-                ><i class="fas fa-chevron-down"></i
-              ></span>
-              <!-- <i class="fas fa-chevron-down"></i> -->
+              <button class="answer-btn">
+                <span class="down-icon"
+                  ><i class="fas fa-chevron-down"></i
+                ></span>
+                <span class="up-icon"><i class="fas fa-chevron-up"></i></span>
+              </button>
             </div>
             <p class="text answer">
               Integer condimentum ipsum id imperdiet finibus. Vivamus in
@@ -270,27 +274,44 @@
           <form class="form-container">
             <input
               type="email"
-              name="email"
+              id="email"
               class="form-input"
               placeholder="Enter your email address"
             />
-            <button type="submit" class="btn submit-btn">Contact Us</button>
+            <button type="button" class="btn submit-btn">Contact Us</button>
           </form>
+          <div class="alarm">Whoops, make sure it's an email</div>
         </div>
       </section>
       <!-- FOOTER -->
-      <footer></footer>
-
-      Contact Us Features Pricing Contact
-
       <footer>
+        <div class="footer-section">
+          <img src="./images/logo-bookmark-footer.svg" alt="logo" />
+          <div class="big-screen-links footer-links">
+            <a class="footer-link" href="#">Features</a>
+            <a class="footer-link" href="#">Pricing</a>
+            <a class="footer-link" href="#">Contact</a>
+          </div>
+          <div class="social-links footer-social-links">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a class="sidebar-twitter" href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+      <div class="fm-footer">
         <p class="attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
+          >. Coded by
+          <a
+            href="https://github.com/SvetlanaStoycheva/frontend-mentor-challenges/tree/main/05-bookmark-landing-page"
+            >Sweta</a
+          >.
         </p>
-      </footer>
+      </div>
       <script src="app.js"></script>
     </main>
   </body>
