@@ -541,17 +541,16 @@ Download
   color: var(--clr-primary-grayish-blue);
 }
 .line {
-  width: 100px;
-  height: 1px;
-  /* border-style: dotted; */
-  /* border-radius: 5px;
-  height: 0.001rem;
-  color: var(--clr-primary-grayish-blue); */
-  margin: 1.5rem auto;
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='2%2c 8' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  height: 1.2rem;
+  background: url(./images/bg-dots.svg) repeat-x;
+  /* background-repeat: repeat-x; */
 }
 .download-btn {
   border: transparent 1px solid;
+  transition: var(--transition);
 }
 .download-btn:hover {
   background: white;
@@ -807,8 +806,9 @@ footer {
   display: grid;
   place-items: center;
 }
-.footer-section img {
+.footer-links img {
   width: 12rem;
+  margin-bottom: 2rem;
 }
 .footer-link {
   text-transform: uppercase;
@@ -850,19 +850,20 @@ footer {
     padding: 1.2rem 5rem;
   }
   .footer-section {
-    grid-template-columns: auto 1fr auto;
-    margin: 0 4rem;
+    grid-template-columns: 1fr auto;
+    column-gap: 15rem;
+    margin: 0 2rem;
   }
   .footer-links {
     display: flex;
-    align-self: left;
     justify-content: space-evenly;
-    margin-left: -13rem;
-    max-width: 18rem;
+    /* margin-left: -18rem; */
     margin-top: 0rem;
   }
-  .footer-section img {
+
+  .footer-links img {
     width: 8rem;
+    margin-bottom: 0rem;
   }
   .footer-link {
     text-transform: uppercase;

@@ -94,11 +94,10 @@ submitBtn.addEventListener('click', (e) => {
   const inputValue = inputValueEl.value;
   const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (inputValue !== '' || inputValue.match(mailformat)) {
-    return true;
+    alarmField.classList.remove('show-alarm');
+    inputField.classList.remove('form-input-alarm');
   } else {
     alarmField.classList.add('show-alarm');
     inputField.classList.add('form-input-alarm');
-
-    return false;
   }
 });
